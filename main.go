@@ -34,23 +34,6 @@ func main() {
 	}
 
     /*
-	// Cargar los datos del censo
-	log.Println("Cargando los datos del censo desde 'source_data.csv'...")
-	if err := loaders.LoadCensusData("source_data.csv"); err != nil {
-		log.Fatalf("Error al cargar los datos del censo: %v", err)
-	}
-
-	// Proporciona la ruta completa al archivo source_data.csv
-	filePath := "censusV/data/source.data.csv"
-
-	// Cargar datos del censo desde el archivo source_data.csv
-	log.Println("Cargando los datos del censo desde 'source_data.csv'...")
-	if err := loaders.LoadCensusData(filePath); err != nil {
-		log.Fatalf("Error al cargar los datos del censo: %v", err)
-	} else {
-		log.Println("Datos del censo cargados correctamente")
-	}
-
 	// Configurar el router
 	router := routes.SetupRouter()
 
