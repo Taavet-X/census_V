@@ -11,9 +11,11 @@ import (
 
 var loadDataOnRun bool = true
 
+
 func main() {
 
-	// Cargar las variables de entorno
+
+	// Cargar las variables de entorno -------------------------------------------------------------------------------------
 	if err := godotenv.Load(); err != nil {
 		log.Println("No se encontró el archivo .env, usando variables de entorno del sistema.")
 	}
@@ -32,6 +34,7 @@ func main() {
 			return
 		}
 	}
+	// Fin de carga de datos ------------------------------------------------------------------------------------------------
 
     /*
 	// Configurar el router
